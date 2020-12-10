@@ -1,0 +1,29 @@
+@import 'src/styles/utils/media-queries';
+
+.news{
+
+  @include xs-up{
+    padding: 50px 0;
+  }
+
+  @include sm-up{
+    padding: 90px 0;
+  }
+}
+
+.news-title{
+  font-size: 60px;
+  max-width: 444px;
+
+  @include xs-up{
+    font-size: 35px;
+  }
+
+  @include sm-up{
+    font-size: 60px;
+  }
+}
+
+.news-title span{
+  color: #004FEC;
+}

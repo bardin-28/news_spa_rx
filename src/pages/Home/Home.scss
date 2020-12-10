@@ -1,0 +1,66 @@
+@import 'src/styles/utils/media-queries';
+
+.home{
+
+  @include xs-up{
+    padding: 50px 0;
+  }
+
+  @include sm-up{
+    padding: 90px 0;
+  }
+}
+
+.home-title{
+  max-width: 444px;
+
+  @include xs-up{
+    font-size: 35px;
+  }
+
+  @include sm-up{
+    font-size: 60px;
+  }
+}
+
+.home-title span{
+  color: #004FEC;
+}
+
+.newsList-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include xs-up{
+    padding-top: 50px;
+  }
+
+  @include ml-up{
+    padding-top: 60px;
+  }
+}
+
+.newsList-wrapper>div{
+  flex-wrap: wrap;
+
+  @include xs-up{
+    margin: 10px 0;
+  }
+
+  @include ml-up{
+    margin: 30px 2.99%;
+  }
+}
+
+.newsList-btn{
+  color: #004FEC;
+  cursor: pointer;
+  border-bottom: 0.5px solid transparent;
+  transition: .5s;
+}
+
+.newsList-btn:hover{
+  color: #004FEC;
+  border-color: #004FEC;
+}

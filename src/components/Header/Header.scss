@@ -1,0 +1,58 @@
+@import 'src/styles/utils/media-queries';
+
+.header-body{
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-body a, .header-title{
+  cursor: pointer;
+}
+
+.header-title{
+  font-weight: 700;
+
+  @include xs-up{
+    font-size: 16px;
+  }
+
+  @include ms-up{
+    font-size: 18px;
+  }
+
+  @include mm-up{
+    font-size: 20px;
+  }
+
+  @include sm-up{
+    font-size: 25px;
+  }
+}
+
+.nav-menu{
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li{
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  @include xs-up{
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  @include mm-up{
+    margin-right: 20px;
+  }
+}
+
+.nav-menu li a.active{
+  color: #004FEC;
+}

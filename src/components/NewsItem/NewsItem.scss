@@ -1,0 +1,96 @@
+@import 'src/styles/utils/variables';
+@import 'src/styles/utils/media-queries';
+
+.news-card{
+  padding: 25px 0;
+  position: relative;
+  margin-bottom: 30px;
+
+  @include xs-up{
+    min-width:  100%;
+    max-width: 100%;
+  }
+
+  @include ml-up{
+    min-width: 320px;
+    max-width: 320px;
+  }
+}
+
+.newsItem-title{
+  padding: 5px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 100px;
+  cursor: pointer;
+  transition: $firstAnim;
+
+  &:hover{
+    color: #fff;
+
+
+    &:after{
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+}
+
+.newsItem-title:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:  #004FEC;
+  min-height: 100%;
+  transition: $firstAnim;
+}
+
+.newsItem-title:after{
+  content: '';
+  background: #004FEC;
+  width: 2px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.newsCard-info{
+  position: absolute;
+  bottom: 20px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(51, 61, 81, .5);
+
+  @include xs-up{
+    width: 85%;
+    left: 15px;
+  }
+
+  @include ml-up{
+    width: 80%;
+    left: 25px;
+  }
+
+}
+
+.newsCard-info span{
+  color: #333D51;
+
+  @include xs-up{
+    font-size: 25px;
+  }
+
+  @include mm-up{
+    font-size: 30px;
+  }
+}
+
+.newsCard-info p:first-child{
+  max-width: 130px;
+
+}
